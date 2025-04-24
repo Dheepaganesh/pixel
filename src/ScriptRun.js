@@ -17,8 +17,6 @@ const ScriptRun = () => {
     (async function () {
       try {
         isCognito().then((result) => {});
-        const sessionCookie = null;
-        const delay = 10;
         const getCookie = function (name) {
           return (
             (document.cookie.match(new RegExp("(^|;)s*" + name + "=([^;]*)")) ||
