@@ -43,7 +43,7 @@ const ScriptRun = () => {
           JSON.stringify(Object.fromEntries(query.entries()))
         );
         console.debug("Query String:", query);
-        const apiUrl = "http://localhost:8081/api/pixel/v1/domain/pixel";
+        const apiUrl = "https://proapi.qa.experience.com/api/pixel/v1/domain/pixel";
         const fullUrl = apiUrl + "?" + query;
         const response = await fetch(fullUrl);
         const data = await response.json();
